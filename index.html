@@ -1,0 +1,9 @@
+<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Proiect 3D</title></head>
+<body style="background:#16181c;color:#eef0f3;font-family:sans-serif;display:grid;place-items:center;height:100vh;margin:0">Se încarcă...
+<script>
+window.GONY_SUPA = window.GONY_SUPA || 'https://wdeqpztutdietgwpjzvp.supabase.co';
+fetch(window.GONY_SUPA + '/storage/v1/object/public/g3d-share/_app/client.html', { cache: 'no-store' })
+  .then(function (r) { if (!r.ok) throw 0; return r.text(); })
+  .then(function (h) { document.open(); document.write(h); document.close(); })
+  .catch(function () { document.body.textContent = 'Pagina nu se poate încărca momentan.'; });
+</script></body></html>
