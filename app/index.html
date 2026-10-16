@@ -1,0 +1,18 @@
+<!doctype html><html lang="ro"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#16181c">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="GONY 3D">
+<link rel="apple-touch-icon" href="https://wdeqpztutdietgwpjzvp.supabase.co/storage/v1/object/public/g3d-share/_app/icon-180.png">
+<title>GONY 3D</title></head>
+<body style="background:#16181c;color:#eef0f3;font-family:sans-serif;display:grid;place-items:center;height:100vh;margin:0">Se încarcă GONY 3D...
+<script>
+/* GONY 3D pentru iPhone: aplicatia (aceeasi ca pe Android) e publicata din aplicatie, la „Publică actualizare”. */
+(function () {
+  var SUPA = 'https://wdeqpztutdietgwpjzvp.supabase.co';
+  fetch(SUPA + '/storage/v1/object/public/g3d-share/_app/team.html?t=' + Date.now(), { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw 0; return r.text(); })
+    .then(function (h) { document.open(); document.write(h); document.close(); })
+    .catch(function () { document.body.textContent = 'GONY 3D nu se poate încărca acum. Verifică internetul și încearcă din nou.'; });
+})();
+</script></body></html>
